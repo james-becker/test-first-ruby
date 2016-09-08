@@ -1,0 +1,281 @@
+* {
+	width: auto;
+	font-family: "Russo One";
+	outline: none;
+	transition: all 0.0s ease;
+}
+
+body {
+  padding-top: 2%;
+  height: 100%;
+  background: white;
+  background: radial-gradient(circle, #ffffff 10%, #333333);
+  background-size: cover;
+}
+
+.shell {
+  transform-origin: 50% 50%;
+  transform: rotate3d(180, 0, 0, 40deg) skew(-12deg);
+  background: #333;
+  width: 600px;
+  height: 560px;
+  border-radius: 300px 30px 30px 300px;
+  margin: 5% auto;
+  padding: 0px 0px 24px 0px;
+    box-shadow: 2px 2px #777, 8px 15px #333, -2px -2px #fff, 20px 40px 40px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  background: -webkit-radial-gradient(20% 20%, farthest-corner, #666, #222, #000);
+  /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(20% 20%, farthest-corner, #666, #222, #000);
+  /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(20% 20%, farthest-corner, #666, #222, #000);
+  /* For Firefox 3.6 to 15 */
+  background: radial-gradient(farthest-corner at 20% 20%, #666666, #222222, #000000);
+  /* Standard syntax (must be last) */
+  background-size: cover;
+	
+}
+
+.go-contain {
+	text-align: center;
+	text-indent: 40px;
+}
+
+.mode-contain {
+	text-align: center;
+	text-indent: 40px;
+}
+
+.off {
+	pointer-events: none;
+}
+
+.pads {
+  position: relative;
+  left: 40px;
+  top: 38px;
+}
+
+.go {
+	width: 90px;
+	height: 80px;
+	position: relative;
+	top: -660px;
+	right: -480px;
+	border-radius: 15px 15px 15px 100px;
+	border-width: 0px;
+	cursor: pointer;
+	font-family: Dosis;
+	font-size: 60px;
+	font-weight: 100;
+	color: white;
+	background: radial-gradient(circle, #ffffff 10%, #888888);
+	box-shadow: 2px 4px #777, inset 2px 4px #fff;
+}
+
+.go-depress {
+	width: 90px;
+	height: 80px;
+	position: relative;
+	top: -660px;
+	right: -480px;
+	border-radius: 15px 15px 15px 100px;
+	border-width: 0px;
+	cursor: pointer;
+	font-family: Dosis;
+	font-size: 60px;
+	font-weight: 100;
+	color: white;
+	background: radial-gradient(circle, #ffffff 10%, #888888);
+	box-shadow: inset 2px 4px #fff !important;
+}
+
+.go:active {
+	position: relative;
+	top: -656px;
+	right: -482px;
+	box-shadow: 0 0 0 0;
+}
+
+.go-play {
+	color: #0f0;
+	background: radial-gradient(circle, #0f0 5%, #666) !important;
+	box-shadow: 0px 0px 15px #0f0, inset 2px 4px #0f0 !important;
+}
+
+.go-listen {
+	color: #f00;
+	background: radial-gradient(circle, #f00 5%, #666) !important;
+	box-shadow: 0px 0px 15px #f00, inset 2px 4px #f00 !important;
+}
+
+.mode {
+	width: 90px;
+	height: 80px;
+	position: relative;
+	border-radius: 100px 20px 20px 20px;
+	top: 460px;
+	left: 480px;
+	background: white;
+	background: radial-gradient(circle, #ffffff 10%, #888888);
+	background-size: cover;
+	box-shadow: 2px 4px #777, inset 2px 4px #fff;
+	cursor: pointer;
+}
+
+.mode-active {
+	color: #f0f;
+	background: radial-gradient(circle, #f0f 5%, #666) !important;
+	box-shadow: 0px 0px 15px #f0f, inset 2px 4px #f0f !important;
+}
+
+.mode-text-right {
+  font-family: Dosis;
+  font-size: 60px;
+  top: 0px;
+  right: 10px;
+  font-weight: 100;
+  color: black;
+  position: absolute;
+  float: right;
+}
+
+.pad {
+  height: 240px;
+  width: 240px;
+  margin: 0x;
+  padding: 0px;
+  z-index: 1;
+  float: left;
+  display: inline-block;
+  opacity: .3;
+  cursor: pointer;
+	box-shadow: 2px 4px #888888;
+}
+
+.pad:active {
+  position: relative;
+  top: 4px;
+  opacity: 1;
+}
+
+#pad1 {
+	background: radial-gradient(circle, #0f0 5%, #666666);
+	border-radius: 300px 0 0 0;
+}
+
+#pad1:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 15px #0f0 !important;
+}
+
+#pad2 {
+	background: radial-gradient(circle, #f00 5%, #444444);
+	border-radius: 0 300px 0 0;
+	clear: right;
+}
+
+#pad2:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 15px #f00 !important;
+}
+
+#pad3 {
+	background: radial-gradient(circle, #00f 5%, #444444);
+	border-radius: 0 0 0 300px;
+	float: left;
+	clear: left;
+}
+
+#pad3:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 15px #00f !important;
+}
+
+#pad4 {
+	background: radial-gradient(circle, #ff0 5%, #333333);
+	border-radius: 0 0 300px 0;
+}
+
+#pad4:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 15px #ff0 !important;
+}
+
+.pad1-lit {
+	opacity: 1;
+	box-shadow: 0px 0px 15px #0f0 !important;
+}
+
+.pad2-lit {
+	opacity: 1;
+	box-shadow: 0px 0px 15px #f00 !important;
+}
+
+.pad3-lit {
+	opacity: 1;
+	box-shadow: 0px 0px 15px #00f !important;
+}
+
+.pad4-lit {
+	opacity: 1;
+	box-shadow: 0px 0px 15px #ff0 !important;
+}
+
+.alert-red {
+	color: #f00;
+	background: radial-gradient(circle, #f00 5%, #666) !important;
+	box-shadow: 0px 0px 15px #f00 !important;
+	opacity: 1;
+}
+
+.alert-red-inner {
+	color: #f00;
+	background: radial-gradient(circle, #f00 5%, #666) !important;
+	box-shadow: 0px 0px 15px #f00, inset 2px 4px #f00 !important;
+	opacity: 1;
+}
+
+.alert-green {
+	color: #0f0;
+	background: radial-gradient(circle, #0f0 5%, #666) !important;
+	box-shadow: 0px 0px 15px #0f0 !important;
+	opacity: 1;
+}
+
+.alert-green-inner {
+	color: #0f0;
+	background: radial-gradient(circle, #0f0 5%, #666) !important;
+	box-shadow: 0px 0px 15px #0f0, inset 2px 4px #0f0 !important;
+	opacity: 1;
+}
+
+.text-inner {
+  position: absolute;
+  top: 80px;
+  left: 35px;
+}
+
+.circle-inner {
+  font-size: 40px;
+  display: inline-block;
+  color: #ddd;
+  text-align: center;
+  background: black;
+  position: relative;
+  width: 220px;
+  height: 220px;
+  top: -320px;
+  left: 160px;
+  border-radius: 200px;
+  z-index: 2;
+  background: -webkit-radial-gradient(-30% -30%, farthest-corner, #666, #222, #000);
+  /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(-30% -30%, farthest-corner, #666, #222, #000);
+  /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(-30% -30%, farthest-corner, #666, #222, #000);
+  /* For Firefox 3.6 to 15 */
+  background: radial-gradient(farthest-corner at -30% -30%, #666666, #222222, #000000);
+  /* Standard syntax (must be last) */
+  background-size: cover;
+}
