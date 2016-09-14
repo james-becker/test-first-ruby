@@ -1,3 +1,12 @@
 class Friend
-  # TODO: your code goes here!
+  def greeting(who=nil)
+    if who
+      return "Hello, " + who + "!"
+    else
+      return "Hello!"
+    end
+  end
 end
+
+p Friend.new.greeting
+
